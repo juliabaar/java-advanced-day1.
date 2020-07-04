@@ -20,4 +20,24 @@ public class VideoCassete {
         this.actors = actors;
     }
 
+    public void printOut() {
+        StringBuilder builder = new StringBuilder(); // pozwala budowac Stringa w uporządkowany sposób
+        builder.append("|")
+                .append(this.id)
+                .append("|")
+                .append(this.title)
+                .append("|")
+                .append(this.price)
+                .append("|")
+                .append(this.actors.toString()) // trzeba nadpisac metode w klasie Person o toString
+                .append("|")
+                .append(this.director.toString()) // trzeba napisac metode w klasie Person o toString
+                .append("|")
+                .append(this.category)
+                .append("|");
+        System.out.println(builder.toString()); // metoda zaimpelentowana w obiekcie podstawowym Object, zwraca nam ona referencje do obiektu
+
+
+        //  |id | title | price | director | actors | category |
+    }
 }

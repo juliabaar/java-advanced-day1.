@@ -27,5 +27,7 @@ public class Main2 {
                 tommy,
                 Category.DRAMA,
                 actors);
+
+        theRoom.printOut();
     }
 }

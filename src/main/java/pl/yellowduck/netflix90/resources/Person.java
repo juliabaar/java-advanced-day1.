@@ -14,7 +14,10 @@ public abstract class Person { // polimorfizm - obiekty pozwalaja wywolac metode
     }
     public abstract void introduce();
 
-
-
-
+    @Override
+    public String toString() {
+        return firstname + " " + lastname;
+    }
 }
+
+// wyjatki unchecked tzw runtimowe,

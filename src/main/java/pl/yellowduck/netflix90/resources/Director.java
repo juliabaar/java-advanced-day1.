@@ -9,4 +9,6 @@ public class Director extends Person {
     public void introduce(){
         System.out.println("Hello, my name is: " + firstname + " " + lastname + ". I am a director.");
     }
+// void sluzy przede wszystkim przekazaniu danych do kolejnego obiektu/systemu
+
 }
