@@ -1,5 +1,8 @@
 package pl.yellowduck.netflix90.resources;
 
+import lombok.Getter;
+
+
 public class Director extends Person {
     public Director(String firstname, String lastname, Gender1 gender1) {
         super(firstname, lastname, gender1);

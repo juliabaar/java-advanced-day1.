@@ -1,5 +1,9 @@
 package pl.yellowduck.netflix90.resources;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+
 public class Actor extends Person {
 
     public Actor(String firstname, String lastname, Gender1 gender1) { //konstruktor klasy podrzednej nie musi miec tyle samo argumentow
@@ -21,9 +25,9 @@ public class Actor extends Person {
      */
 
         if (Gender1.WOMAN.equals(gender)) {
-            System.out.println("Hello, my name is: " + firstname + " " + lastname + ". I am an actress.");
+            System.out.println("Hello, my name is: " + getFirstname() + " " + getLastname() + ". I am an actress.");
         } else {
-            System.out.println("Hello, my name is: " + firstname + " " + lastname + ". I am an actor.");
+            System.out.println("Hello, my name is: " + getFirstname() + " " + getLastname() + ". I am an actor.");
         }
 
 
